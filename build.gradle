@@ -1,0 +1,24 @@
+apply plugin: 'war'
+apply plugin: 'scala'
+apply plugin: 'idea'
+
+repositories {
+  mavenCentral()
+  mavenLocal()
+}
+
+dependencies {
+  providedCompile 'javax.servlet:servlet-api:2.5'
+  runtime 'javax.servlet:jstl:1.1.2'
+  compile 'org.scala-lang:scala-library:2.11.7'
+  compile 'io.netty:netty-all:4.0.37.Final'
+  compile 'org.springframework:spring-webmvc:4.3.0.RELEASE'
+  compile 'org.slf4j:slf4j-api:1.7.12'
+  testCompile 'junit:junit:4.11'
+}
+
+task printVersion {
+  doLast {
+    println("this is a test")
+  }
+}
