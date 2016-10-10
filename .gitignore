@@ -1,2 +1,7 @@
 /target/
 .settings
+.DS_Store
+.gradle/
+.idea/
+bin/
+build/
