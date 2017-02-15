@@ -5,3 +5,7 @@
 .idea/
 bin/
 build/
+.cache-main
+.cache-tests
+.classpath
+.project

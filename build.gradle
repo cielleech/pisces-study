@@ -3,6 +3,9 @@ apply plugin: 'scala'
 apply plugin: 'idea'
 
 repositories {
+  maven {
+    url 'http://uk.maven.org/maven2'
+  }
   mavenCentral()
   mavenLocal()
 }
@@ -14,11 +17,15 @@ dependencies {
   compile 'io.netty:netty-all:4.0.37.Final'
   compile 'org.springframework:spring-webmvc:4.3.0.RELEASE'
   compile 'org.slf4j:slf4j-api:1.7.12'
-  testCompile 'junit:junit:4.11'
-}
-
-task printVersion {
-  doLast {
-    println("this is a test")
+  compile 'com.google.zxing:core:3.2.0'
+  compile ('org.apache.storm:storm-core:1.0.1') {
+    exclude group: 'org.apache.logging.log4j', module: 'log4j-slf4j-impl'
+    exclude group: 'org.slf4j', module: 'log4j-over-slf4j'
   }
+  compile 'org.apache.hbase:hbase-client:1.2.2'
+  compile('org.apache.storm:storm-kafka:1.0.1') {
+    exclude group: 'com.google.guava', module: 'guava'
+  }
+  compile 'io.netty:netty:3.10.6.Final'
+  testCompile 'junit:junit:4.11'
 }

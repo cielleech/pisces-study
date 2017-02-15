@@ -1,3 +1,5 @@
+package org.vox.study.common
+
 /**
   * Created by cielleech on 16/6/28.
   */

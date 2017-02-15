@@ -16,11 +16,15 @@ import java.util.concurrent.atomic.AtomicInteger;
  * Created by cielleech on 16/8/22.
  */
 public class WordCounter extends BaseRichBolt {
-    private OutputCollector collector;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 6400983097928642193L;
+	private OutputCollector collector;
     private Map<String, AtomicInteger> counterMap;
 
     @Override
-    public void prepare(Map stormConf, TopologyContext context, OutputCollector collector) {
+    public void prepare(@SuppressWarnings("rawtypes") Map stormConf, TopologyContext context, OutputCollector collector) {
         this.collector = collector;
         counterMap = new HashMap<>();
     }

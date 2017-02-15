@@ -1,4 +1,4 @@
-package org.pisces.study.controller
+package org.vox.study.controller
 
 import javax.servlet.http.HttpServletRequest
 
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.{RequestMapping, RequestMethod, R
 @RequestMapping(value = Array("/cms"))
 class MainController {
 
-  import org.pisces.study.controller.MainController.logger
+  import MainController.logger
 
   @RequestMapping(value = Array("/index"), method = Array(RequestMethod.GET), produces = Array("text/javascript;charset=UTF-8"))
   @ResponseBody
