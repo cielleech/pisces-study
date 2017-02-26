@@ -1,31 +1,43 @@
-apply plugin: 'war'
-apply plugin: 'scala'
-apply plugin: 'idea'
-
-repositories {
-  maven {
-    url 'http://uk.maven.org/maven2'
+buildscript {
+  repositories {
+    jcenter()
   }
-  mavenCentral()
-  mavenLocal()
+  dependencies {
+    classpath 'io.spring.gradle:dependency-management-plugin:1.0.0.RELEASE'
+  }
 }
 
-dependencies {
-  providedCompile 'javax.servlet:servlet-api:2.5'
-  runtime 'javax.servlet:jstl:1.1.2'
-  compile 'org.scala-lang:scala-library:2.11.7'
-  compile 'io.netty:netty-all:4.0.37.Final'
-  compile 'org.springframework:spring-webmvc:4.3.0.RELEASE'
-  compile 'org.slf4j:slf4j-api:1.7.12'
-  compile 'com.google.zxing:core:3.2.0'
-  compile ('org.apache.storm:storm-core:1.0.1') {
-    exclude group: 'org.apache.logging.log4j', module: 'log4j-slf4j-impl'
-    exclude group: 'org.slf4j', module: 'log4j-over-slf4j'
+subprojects {
+  apply plugin: 'io.spring.dependency-management'
+
+  repositories {
+    maven {
+      url 'http://uk.maven.org/maven2'
+    }
+    mavenCentral()
+    mavenLocal()
   }
-  compile 'org.apache.hbase:hbase-client:1.2.2'
-  compile('org.apache.storm:storm-kafka:1.0.1') {
-    exclude group: 'com.google.guava', module: 'guava'
+
+  dependencyManagement {
+    dependencies {
+      dependency  'javax.servlet:servlet-api:2.5'
+      dependency 'javax.servlet:jstl:1.1.2'
+      dependency  'org.scala-lang:scala-library:2.11.7'
+      dependency  'io.netty:netty-all:4.0.37.Final'
+      dependency  'org.springframework:spring-webmvc:4.3.0.RELEASE'
+      dependency  'org.slf4j:slf4j-api:1.7.12'
+      dependency  'com.google.zxing:core:3.2.0'
+      dependency  ('org.apache.storm:storm-core:1.0.1') {
+        exclude group: 'org.apache.logging.log4j', module: 'log4j-slf4j-impl'
+        exclude group: 'org.slf4j', module: 'log4j-over-slf4j'
+      }
+      dependency  'org.apache.hbase:hbase-client:1.2.2'
+      dependency ('org.apache.storm:storm-kafka:1.0.1') {
+        exclude group: 'com.google.guava', module: 'guava'
+      }
+      dependency  'net.opentsdb:opentsdb:2.2.2'
+      dependency  'io.netty:netty:3.10.6.Final'
+      dependency  'junit:junit:4.11'
+    }
   }
-  compile 'io.netty:netty:3.10.6.Final'
-  testCompile 'junit:junit:4.11'
 }

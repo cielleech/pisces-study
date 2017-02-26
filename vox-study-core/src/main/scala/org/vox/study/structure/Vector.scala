@@ -10,15 +10,15 @@ class Vector[T] {
   var elements: Array[T] = _
 
   def expand(): Unit = {
-    if (size < capacity)
-      return
-
-    if (capacity < DEFAULT_CAPACITY)
-      capacity = DEFAULT_CAPACITY
-
-    val temp = new Array[T](capacity)
-    elements.copyToArray(temp)
-    elements = temp
+//    if (size < capacity)
+//      return
+//
+//    if (capacity < DEFAULT_CAPACITY)
+//      capacity = DEFAULT_CAPACITY
+//
+//    val temp = new Array[T](capacity)
+//    elements.copyToArray(temp)
+//    elements = temp
   }
 }
 
