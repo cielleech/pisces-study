@@ -6,11 +6,12 @@ import java.util
 import com.google.zxing.common.BitMatrix
 import com.google.zxing.{BarcodeFormat, EncodeHintType, MultiFormatWriter}
 import org.junit.Test
-import java.io.File
+import java.io.{File, FileInputStream, InputStreamReader}
 import javax.imageio.ImageIO
+
+import scala.io.Source
 import scala.util.Failure
 import scala.util.Try
-import scala.util.Success
 
 class CommonTests {
   @Test
@@ -20,6 +21,26 @@ class CommonTests {
     val matrix = new MultiFormatWriter().encode("1234", BarcodeFormat.QR_CODE, 300, 300, hints)
   }
 
+  @Test
+  def ioTest(): Unit = {
+    val file = new File("e:\\14558.dump")
+
+    val out = new InputStreamReader(new FileInputStream(file))
+    var ch = -1
+    do {
+      ch = out.read()
+      println(ch)
+    } while (ch != -1)
+  }
+
+  @Test
+  def scalaIoTest(): Unit = {
+    try {
+      Source.fromFile("e:\\14558.dump").getLines().foreach(println(_))
+    } catch {
+      case ex: Throwable => None
+    }
+  }
 }
 
 object CommonTests {

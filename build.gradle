@@ -28,16 +28,22 @@ subprojects {
       dependency  'org.slf4j:slf4j-api:1.7.12'
       dependency  'com.google.zxing:core:3.2.0'
       dependency  ('org.apache.storm:storm-core:1.0.1') {
-        exclude group: 'org.apache.logging.log4j', module: 'log4j-slf4j-impl'
-        exclude group: 'org.slf4j', module: 'log4j-over-slf4j'
+        exclude 'org.apache.logging.log4j:log4j-slf4j-impl'
+        exclude 'org.slf4j:log4j-over-slf4j'
       }
       dependency  'org.apache.hbase:hbase-client:1.2.2'
       dependency ('org.apache.storm:storm-kafka:1.0.1') {
-        exclude group: 'com.google.guava', module: 'guava'
+        exclude 'com.google.guava:guava'
       }
-      dependency  'net.opentsdb:opentsdb:2.2.2'
+      dependency('net.opentsdb:opentsdb:2.2.2') {
+        exclude 'com.google.gwt:gwt-user'
+      }
       dependency  'io.netty:netty:3.10.6.Final'
       dependency  'junit:junit:4.11'
     }
   }
+}
+
+task wrapper(type: Wrapper) {
+  gradleVersion='2.10'
 }
