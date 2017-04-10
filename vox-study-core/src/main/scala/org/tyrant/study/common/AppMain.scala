@@ -5,6 +5,6 @@ package org.tyrant.study.common
   */
 object AppMain {
   def main(args: Array[String]): Unit = {
-    println("hello world")
+    println("Hello World!")
   }
 }

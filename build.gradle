@@ -38,8 +38,9 @@ subprojects {
       dependency('net.opentsdb:opentsdb:2.2.2') {
         exclude 'com.google.gwt:gwt-user'
       }
-      dependency  'io.netty:netty:3.10.6.Final'
-      dependency  'junit:junit:4.11'
+      dependency 'io.netty:netty:3.10.6.Final'
+      dependency 'junit:junit:4.11'
+      dependency 'org.apache.kafka:kafka_2.10:0.10.2.0'
     }
   }
 }

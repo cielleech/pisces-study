@@ -14,5 +14,6 @@ dependencies {
   compile 'org.apache.storm:storm-kafka'
   compile 'net.opentsdb:opentsdb'
   compile 'io.netty:netty'
+  compile 'org.apache.kafka:kafka_2.10'
   testCompile 'junit:junit'
 }
