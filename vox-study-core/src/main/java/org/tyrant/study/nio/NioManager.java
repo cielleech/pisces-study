@@ -1,4 +1,4 @@
-package com.tyrant.study.nio;
+package org.tyrant.study.nio;
 
 import java.io.FileInputStream;
 import java.io.IOException;

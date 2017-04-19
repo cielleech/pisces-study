@@ -1,4 +1,4 @@
-package org.pisces.netty.common.server;
+package org.tyrant.study.netty.common.server;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;

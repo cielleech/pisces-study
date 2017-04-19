@@ -1,4 +1,4 @@
-package org.pisces.netty.inaction.server;
+package org.tyrant.study.netty.inaction.server;
 
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelFutureListener;

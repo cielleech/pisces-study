@@ -1,4 +1,4 @@
-package org.pisces.oio.client;
+package org.tyrant.study.oio.client;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package org.pisces.javacore;
+package org.tyrant.study.javacore;
 
 import java.util.GregorianCalendar;
 

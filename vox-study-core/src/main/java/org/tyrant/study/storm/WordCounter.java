@@ -1,4 +1,4 @@
-package org.pisces.study.storm;
+package org.tyrant.study.storm;
 
 import org.apache.storm.task.OutputCollector;
 import org.apache.storm.task.TopologyContext;

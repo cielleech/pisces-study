@@ -1,4 +1,4 @@
-package org.pisces.netty.inaction.server;
+package org.tyrant.study.netty.inaction.server;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.buffer.ByteBuf;
@@ -54,6 +54,6 @@ public class EchoServer {
         }
 
         System.out.println(buf.getByte(10));
-//        new EchoServer(65535).start();
+        //        new EchoServer(65535).start();
     }
 }

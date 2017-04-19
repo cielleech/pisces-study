@@ -38,8 +38,10 @@ subprojects {
       dependency('net.opentsdb:opentsdb:2.2.2') {
         exclude 'com.google.gwt:gwt-user'
       }
-      dependency  'io.netty:netty:3.10.6.Final'
-      dependency  'junit:junit:4.11'
+      dependency 'io.netty:netty:3.10.6.Final'
+      dependency 'junit:junit:4.11'
+      dependency 'org.apache.httpcomponents:httpclient:4.5.3'
+      dependency 'org.apache.httpcomponents:httpasyncclient:4.1.3'
     }
   }
 }

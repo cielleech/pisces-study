@@ -1,4 +1,4 @@
-package org.pisces.netty.inaction.client;
+package org.tyrant.study.netty.inaction.client;
 
 import java.net.InetSocketAddress;
 
@@ -10,6 +10,9 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 
+/**
+ * @author tyrant
+ */
 public class EchoClient {
     private final String host;
     private final int port;

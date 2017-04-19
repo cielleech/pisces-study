@@ -1,6 +1,6 @@
-package org.pisces;
+package org.tyrant.study;
 
-import org.pisces.javacore.Chapter3;
+import org.tyrant.study.javacore.Chapter3;
 
 /**
  * Created by cielleech on 2016/4/9.

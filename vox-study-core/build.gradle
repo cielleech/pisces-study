@@ -14,5 +14,7 @@ dependencies {
   compile 'org.apache.storm:storm-kafka'
   compile 'net.opentsdb:opentsdb'
   compile 'io.netty:netty'
+  compile 'org.apache.httpcomponents:httpclient'
+  compile 'org.apache.httpcomponents:httpasyncclient'
   testCompile 'junit:junit'
 }
