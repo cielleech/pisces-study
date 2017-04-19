@@ -1,4 +1,4 @@
-package org.pisces.oio.server;
+package org.tyrant.study.oio.server;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,6 +7,9 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Date;
 
+/**
+ * @author tyrant
+ */
 public class TimeServerHandler implements Runnable {
     private Socket socket;
 

@@ -1,4 +1,4 @@
-package org.pisces.study.support;
+package org.tyrant.study.support;
 
 public @interface UserIdAttribute {
 
