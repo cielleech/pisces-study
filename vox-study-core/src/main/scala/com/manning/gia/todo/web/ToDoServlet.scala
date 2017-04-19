@@ -7,6 +7,6 @@ import javax.servlet.http.{HttpServlet, HttpServletRequest, HttpServletResponse}
   */
 class ToDoServlet extends HttpServlet {
   protected override def service(request: HttpServletRequest, response: HttpServletResponse): Unit = {
-    val servletPath = request.getServletPath;
+    val servletPath = request.getServletPath
   }
 }

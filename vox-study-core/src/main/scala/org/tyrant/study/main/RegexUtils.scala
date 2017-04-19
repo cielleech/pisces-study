@@ -1,4 +1,4 @@
-package org.vox.study.main
+package org.tyrant.study.main
 
 import java.util.regex.Pattern
 

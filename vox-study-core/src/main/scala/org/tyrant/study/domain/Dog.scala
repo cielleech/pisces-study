@@ -1,4 +1,4 @@
-package org.vox.study.domain
+package org.tyrant.study.domain
 
 /**
  * 

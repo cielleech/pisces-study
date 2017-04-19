@@ -1,4 +1,4 @@
-package org.vox.study.controller
+package org.tyrant.study.controller
 
 import javax.servlet.http.HttpServletRequest
 

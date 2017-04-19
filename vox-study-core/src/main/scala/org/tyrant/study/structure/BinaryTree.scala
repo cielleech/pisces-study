@@ -1,4 +1,4 @@
-package org.vox.study.structure
+package org.tyrant.study.structure
 
 class BinaryTree[T <: Comparable[T]] {
   private var root: BinaryNode[T] = _

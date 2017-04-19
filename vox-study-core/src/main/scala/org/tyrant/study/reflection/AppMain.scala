@@ -1,6 +1,6 @@
-package org.vox.study.reflection
+package org.tyrant.study.reflection
 
-import org.vox.study.domain.Dog
+import org.tyrant.study.domain.Dog
 
 /**
  * 

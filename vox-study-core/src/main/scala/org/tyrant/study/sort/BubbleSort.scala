@@ -1,4 +1,4 @@
-package org.vox.study.sort
+package org.tyrant.study.sort
 
 import scala.util.Random
 import scala.collection.mutable.ListBuffer

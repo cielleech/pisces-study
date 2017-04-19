@@ -1,4 +1,4 @@
-package org.vox.study.controller
+package org.tyrant.study.controller
 
 import org.springframework.core.MethodParameter
 import org.springframework.web.bind.support.WebDataBinderFactory

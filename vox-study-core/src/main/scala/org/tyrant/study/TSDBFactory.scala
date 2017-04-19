@@ -1,4 +1,4 @@
-package org.vox.study.util
+package org.tyrant.study
 
 import net.opentsdb.core.TSDB
 

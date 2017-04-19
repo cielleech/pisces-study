@@ -1,4 +1,4 @@
-package org.vox.study.netty
+package org.tyrant.study.netty
 
 import java.net.URI
 

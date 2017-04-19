@@ -1,4 +1,4 @@
-package org.vox.study.structure
+package org.tyrant.study.structure
 
 class Vector[T] {
   import Vector.DEFAULT_CAPACITY

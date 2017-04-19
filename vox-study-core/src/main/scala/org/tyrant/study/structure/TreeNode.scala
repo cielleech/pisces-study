@@ -1,4 +1,4 @@
-package org.vox.study.structure
+package org.tyrant.study.structure
 
 /**
   * Created by cielleech on 2017/3/12.

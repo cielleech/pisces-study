@@ -1,4 +1,4 @@
-package org.vox.study.socket
+package org.tyrant.study.socket
 
 import java.io.{BufferedReader, InputStreamReader}
 import java.net.Socket
