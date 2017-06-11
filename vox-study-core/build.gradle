@@ -12,10 +12,13 @@ dependencies {
   compile 'org.apache.storm:storm-core'
   compile 'org.apache.hbase:hbase-client'
   compile 'org.apache.storm:storm-kafka'
-  compile 'net.opentsdb:opentsdb'
+  compile ('net.opentsdb:opentsdb') {
+    exclude group:'org.slf4j', module: 'slf4j-api'
+  }
   compile 'io.netty:netty'
   compile 'org.apache.httpcomponents:httpclient'
   compile 'org.apache.httpcomponents:httpasyncclient'
   compile 'org.apache.kafka:kafka_2.10'
+  compile 'com.typesafe.akka:akka-actor_2.11'
   testCompile 'junit:junit'
 }
