@@ -1,6 +1,11 @@
 apply plugin: 'scala'
 apply plugin: 'war'
 
+compileJava {
+  sourceCompatibility = 1.8
+  targetCompatibility = 1.8
+}
+
 dependencies {
   providedCompile 'javax.servlet:servlet-api'
   runtime 'javax.servlet:jstl'
@@ -19,6 +24,7 @@ dependencies {
   compile 'org.apache.httpcomponents:httpclient'
   compile 'org.apache.httpcomponents:httpasyncclient'
   compile 'org.apache.kafka:kafka_2.10'
-  compile 'com.typesafe.akka:akka-actor_2.11'
+  compile 'com.typesafe.akka:akka-actor_2.10'
+  compile 'com.rabbitmq:amqp-client:5.0.0'
   testCompile 'junit:junit'
 }

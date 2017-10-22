@@ -1,17 +1,15 @@
 package org.vox.study;
 
-import org.vox.study.javacore.Chapter3;
-import org.vox.study.javacore.Chapter3;
+import java.math.BigDecimal;
 
 /**
  * Created by cielleech on 2016/4/9.
  */
 public class AppMain {
     public static void main(String[] args) {
-        Chapter3 chapter = new Chapter3();
-        
-//        chapter.testOperate();
-//        chapter.testCodePoint();
-        chapter.testDate();
+    	    BigDecimal a = new BigDecimal("0.3").subtract(new BigDecimal("0.2"));
+    	    BigDecimal b = new BigDecimal("0.2").subtract(new BigDecimal("0.1"));
+    	    System.out.println((0.3 - 0.2) == (0.2 - 0.1));
+    	    System.out.println(a.compareTo(b));
     }
 }

@@ -9,3 +9,5 @@ build/
 .cache-tests
 .classpath
 .project
+*iml
+*/out/
