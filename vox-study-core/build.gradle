@@ -23,8 +23,8 @@ dependencies {
   compile 'io.netty:netty'
   compile 'org.apache.httpcomponents:httpclient'
   compile 'org.apache.httpcomponents:httpasyncclient'
-  compile 'org.apache.kafka:kafka_2.10'
-  compile 'com.typesafe.akka:akka-actor_2.10'
+  compile 'org.apache.kafka:kafka_2.11'
+  compile 'com.typesafe.akka:akka-actor_2.11'
   compile 'com.rabbitmq:amqp-client:5.0.0'
   testCompile 'junit:junit'
 }
