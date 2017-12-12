@@ -5,11 +5,10 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * Created by cielleech on 2017/5/31.
+ * Created by rookie.lee on 2017/5/31.
  */
 public class CountDownLatchDemo {
     public static void main(String[] args) {
-        Long a = 100L;
         final CountDownLatch lock = new CountDownLatch(1);
 
         ExecutorService service = Executors.newFixedThreadPool(10);

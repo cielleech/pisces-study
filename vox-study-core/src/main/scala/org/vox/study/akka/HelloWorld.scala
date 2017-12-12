@@ -13,5 +13,5 @@ object HelloWorldApp extends App {
   val helloActor = system.actorOf(Props[HelloWorld], "helloActor")
 
   helloActor ! "hello"
-  system.terminate()
+  system.shutdown()
 }

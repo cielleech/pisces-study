@@ -39,7 +39,7 @@ class WatchActor extends Actor {
   }
   override def receive: Receive = {
     case terminated: Terminated => logger.error(terminated.getActor.path + " has terminated, now shutdown the system")
-      context.system.terminate()
+      context.system.shutdown()
   }
 }
 
